@@ -8,7 +8,7 @@ RUN useradd -m -u 1000 -s /bin/bash jenkins
 RUN echo "jenkins:jenkins" | chpasswd && \
     mkdir /home/jenkins/.m2
     
-RUN chown -R jenkins:jenkins /home/jenkins/.m2/ && \
+RUN chown -R jenkins:jenkins /home/jenkins/.m2/ 
     #chown -R jenkins:jenkins /home/jenkins/.ssh/
     
 RUN yum install -y openssh-clients
