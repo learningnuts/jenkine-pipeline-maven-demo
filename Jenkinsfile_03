@@ -6,7 +6,7 @@ pipeline {
     //}
     agent {
         dockerfile {
-            label "master"
+            label "docker-maven-3.6.0"
             //args "-v /tmp/maven:/home/jenkins/.m2 -e MAVEN_CONFIG=/home/jenkins/.m2"
         }
     }
